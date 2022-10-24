@@ -1,0 +1,135 @@
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    max-width: 768px;
+    padding: 24px 18px;
+    gap: 48px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    padding: 0 16px;
+    max-width: 768px;
+}
+
+footer>img:first-of-type {
+    margin-right: 12px;
+}
+
+.footer-logo {
+    object-fit: contain;
+    width: 100px;
+    height: auto;
+}
+
+.finaro {
+    width: 180px;
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.card-logo-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+.card-logo {
+    width: 70px;
+    height: 40px;
+    border: 1px solid var(--divider);
+    margin-right: 12px;
+}
+
+.card-logo:last-of-type {
+    margin-right: 0;
+}
+
+.sub-header {
+    color: var(--text1);
+    text-transform: uppercase;
+}
+
+.cc-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border-bottom-color: var(--primary_main);
+}
+
+input[type='text'] {
+    width: 100%;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--text2);
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 12px;
+    border-radius: 0 !important;
+}
+
+input[type='text'].inputError {
+    color: var(--error);
+    opacity: 1;
+}
+
+input::placeholder {
+    color: var(--text2);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.submit-button {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--primary_main);
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.submit-button:active {
+    background-color: var(--primary_dark);
+}
+
+.submit-button:disabled {
+    background-color: #727882;
+    color: #dddee2;
+    opacity: 0.6;
+}
